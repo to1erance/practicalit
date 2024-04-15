@@ -1,0 +1,40 @@
+﻿<Window x:Class="Praktika1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika1"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800" Background="LightYellow">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Личный кабинет" TextAlignment="Center" FontWeight="Bold" FontSize="40"/>
+            <StackPanel Orientation="Horizontal">
+                
+              <StackPanel Orientation="Vertical" Width="400">
+                  
+                <TextBlock Text="Введите логин" FontSize="20"/>
+                <TextBlock Height="25"/>
+                    <TextBox Name="newlogin" Width="250" Height="30"/>
+                </StackPanel>
+
+
+                <StackPanel Orientation="Vertical" Width="400">
+
+                    <TextBlock Text="Введите пароль" FontSize="20"/>
+                    <TextBlock Height="25"/>
+                    <TextBox Name="newpwd" Width="250" Height="30"/>
+
+                    <TextBlock Text="Введите почту" FontSize="20"/>
+                    <TextBlock Height="25"/>
+                    <TextBox Name="newmail" Width="250" Height="30"/>
+                    <TextBlock Height="25"/>
+                    <Button Name="newbtn" Click="newbtn_Click" Height="30" Content="Заменить" Background="White"/>
+                    <TextBlock Name="vivod"/>
+                </StackPanel>
+            </StackPanel>
+           
+
+        </StackPanel>
+    </Grid>
+</Window>
